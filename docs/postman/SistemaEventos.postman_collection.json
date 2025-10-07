@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "SistemaEventos - Minimal",
+    "_postman_id": "00000000-0000-0000-0000-000000000000",
+    "description": "Colección mínima para probar los endpoints JSON del proyecto",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Eventos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/SistemaEventosServicioWeb/api/evento/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["SistemaEventosServicioWeb","api","evento",""]
+        }
+      }
+    },
+    {
+      "name": "Listar Locales",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/SistemaEventosServicioWeb/api/local/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["SistemaEventosServicioWeb","api","local",""]
+        }
+      }
+    },
+    {
+      "name": "Crear Evento (form)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            { "key": "nombre", "value": "Evento Prueba" },
+            { "key": "descripcion", "value": "Descripción" },
+            { "key": "fechaEvento", "value": "2025-10-15" },
+            { "key": "ubicacion", "value": "Auditorio" },
+            { "key": "estado", "value": "activo" },
+            { "key": "organizador", "value": "Equipo" }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/SistemaEventosServicioWeb/api/evento/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["SistemaEventosServicioWeb","api","evento",""]
+        }
+      }
+    }
+  ]
+}

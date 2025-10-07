@@ -2,19 +2,13 @@
 
 Proyecto final de la asignatura **Desarrollo de Servicios Web II (DSWII)** — sistema para gestionar eventos, locales, participantes y proveedores con **Java** y **MySQL**.
 
-<p align="center">
-    <img src="docs/images/logo.svg" alt="SistemaEventos" width="420" />
-    <br />
-    <img src="docs/images/java.svg" alt="Java" width="110" style="margin-right:6px;" />
-    <img src="docs/images/mysql.svg" alt="MySQL" width="110" style="margin-right:6px;" />
-    <img src="docs/images/tomcat.svg" alt="Tomcat" width="110" />
-    <br />
-    <strong style="font-size:20px">🌐 SistemaEventos — Servicio Web (Java · MySQL)</strong>
-</p>
+![SistemaEventos logo](docs/images/logo.svg)
+
+![Java badge](docs/images/java.svg) ![MySQL badge](docs/images/mysql.svg) ![Tomcat badge](docs/images/tomcat.svg)
+
+### 🌐 SistemaEventos — Servicio Web (Java · MySQL)
 
 ---
-
-## SistemaEventos — Servicio Web
 
 Proyecto final de la asignatura **Desarrollo de Servicios Web II (DSWII)**. Sistema para gestionar eventos, locales, participantes y proveedores.
 
@@ -36,6 +30,8 @@ El proyecto expone endpoints REST-like implementados con servlets para consumo s
 - [Script de despliegue opcional](#script-de-despliegue-opcional)
 - [Próximos pasos sugeridos](#pr%C3%B3ximos-pasos-sugeridos)
 - [Autor](#autor)
+ - [Próximos pasos sugeridos](#pr%C3%B3ximos-pasos-sugeridos)
+ - [Autor](#autor)
 
 ---
 
@@ -120,21 +116,14 @@ Nota: el `mysql-connector-java` está declarado en `pom.xml` con scope `runtime`
 2. Inicia Tomcat (o reinícialo) y espera a que el despliegue se extraiga.
 3. Accede a los endpoints de los servlets. Ejemplos (ajusta host/puerto/contexto):
 
-- Listar locales: http://localhost:8080/SistemaEventosServicioWeb/api/local/
-- Listar eventos: http://localhost:8080/SistemaEventosServicioWeb/api/evento/
+- Listar locales: [http://localhost:8080/SistemaEventosServicioWeb/api/local/](http://localhost:8080/SistemaEventosServicioWeb/api/local/)
+- Listar eventos: [http://localhost:8080/SistemaEventosServicioWeb/api/evento/](http://localhost:8080/SistemaEventosServicioWeb/api/evento/)
 
 Los endpoints REST-like están implementados mediante servlets en `com.cibertec.api` y devuelven JSON.
 
 ---
 
-## Ejecutar desde un IDE
-
-Importa el proyecto en tu IDE favorito (Eclipse, IntelliJ, NetBeans):
-
-1. Importa como proyecto Maven.
-2. Configura el servidor Tomcat en el IDE.
-3. Ajusta las credenciales en `ConexionBDMySql.java` o usa variables de entorno si prefieres.
-4. Ejecuta en modo 'Run on Server'.
+<!-- Ejecutar desde un IDE: descripción detallada movida hacia el final del archivo para evitar duplicados -->
 
 ---
 
@@ -160,7 +149,6 @@ El repositorio incluye `deploy-to-tomcat.bat` como ejemplo de despliegue desde W
 ---
 
 ## Autor
-
 Proyecto desarrollado como entrega para la asignatura DSWII.
 
 Si quieres que incluya ejemplos concretos de llamadas, Postman collection, o una especificación OpenAPI para los endpoints JSON, dime qué prefieres y lo añado.
