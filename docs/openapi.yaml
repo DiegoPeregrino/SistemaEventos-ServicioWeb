@@ -1,0 +1,114 @@
+openapi: 3.0.3
+info:
+  title: SistemaEventos API
+  version: '1.0.0'
+  description: API mínima generada automáticamente para los endpoints JSON (servlets)
+servers:
+  - url: http://localhost:8080/SistemaEventosServicioWeb
+paths:
+  /api/evento/:
+    get:
+      summary: Listar eventos
+      responses:
+        '200':
+          description: Lista de eventos en JSON
+          content:
+            application/json: {}
+    post:
+      summary: Crear evento (form-urlencoded)
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                nombre:
+                  type: string
+                descripcion:
+                  type: string
+                fechaEvento:
+                  type: string
+                  format: date
+                ubicacion:
+                  type: string
+                estado:
+                  type: string
+                organizador:
+                  type: string
+      responses:
+        '200':
+          description: Resultado de inserción
+  /api/evento/{id}:
+    put:
+      summary: Actualizar evento por id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded: {}
+      responses:
+        '200':
+          description: Resultado de actualización
+    delete:
+      summary: Eliminar evento por id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Resultado de eliminación
+  /api/local/:
+    get:
+      summary: Listar locales
+      responses:
+        '200':
+          description: Lista de locales
+          content:
+            application/json: {}
+    post:
+      summary: Crear local
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded: {}
+      responses:
+        '200':
+          description: Resultado de inserción
+  /api/local/{id}:
+    put:
+      summary: Actualizar local por id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded: {}
+      responses:
+        '200':
+          description: Resultado de actualización
+    delete:
+      summary: Eliminar local por id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Resultado de eliminación
+
+components: {}
