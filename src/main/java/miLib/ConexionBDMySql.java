@@ -29,7 +29,7 @@ public class ConexionBDMySql {
 	//Prueba de Conexión
 	public static void main(String[] args) {
 		//modificar el nombre de la bd o esquema de BD
-		Connection cnx= ConexionBDMySql.obtenerConexion("BDMEDIK");
+		Connection cnx= ConexionBDMySql.obtenerConexion("casobd");
 		if(cnx!=null) {
 			System.out.println("Conexión exitosa...");
 		}

@@ -1,0 +1,63 @@
+# .gitignore - Ignorar archivos y carpetas comunes para proyectos Java/WEB
+# Añadido por petición del usuario
+
+# Compilados y artefactos
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Directorios de build / salida
+/build/
+/target/
+/out/
+/bin/
+/dist/
+/classes/
+
+# Tomcat / servidores
+/work/
+/temp/
+/logs/
+*.log
+
+# IDEs
+/.idea/
+*.iml
+/.classpath
+/.project
+/.settings/
+
+# Eclipse specific
+.metadata/
+.classpath
+.project
+.settings/
+.loadpath
+
+# VS Code
+/.vscode/
+
+# JetBrains
+*.ipr
+*.iws
+
+# Node
+/node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Swap / editor backups
+*~
+*.swp
+
+# Environment / credentials
+.env
+*.keystore
+
+# Misc
+coverage/
+reports/

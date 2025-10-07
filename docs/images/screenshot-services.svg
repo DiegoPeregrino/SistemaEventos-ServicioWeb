@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#f6f8fb"/>
+  <rect x="24" y="24" width="752" height="58" rx="6" fill="#ffffff" stroke="#dfe7f3"/>
+  <text x="40" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#2b4d8a">API - Services</text>
+  <rect x="40" y="100" width="320" height="260" rx="6" fill="#ffffff" stroke="#dfe7f3"/>
+  <text x="56" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#333">WSEvento</text>
+  <text x="56" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#666">POST /api/evento/</text>
+  <text x="56" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#333">WSLocal</text>
+  <text x="56" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#666">GET /api/local/</text>
+  <rect x="392" y="100" width="320" height="260" rx="6" fill="#ffffff" stroke="#dfe7f3"/>
+  <text x="408" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#333">Database</text>
+  <text x="408" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#666">MySQL - eventos, locales, participantes</text>
+</svg>
